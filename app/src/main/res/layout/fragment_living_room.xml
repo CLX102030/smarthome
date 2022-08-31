@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.living_roomFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="我的客厅"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/curtains_open_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="窗帘开"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/null_xml" />
+
+                <TextView
+                    android:id="@+id/curtains_pause_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="窗帘暂停"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/null_xml" />
+
+                <TextView
+                    android:id="@+id/curtains_close_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="窗帘关"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/image_fan"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/fan_1"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <ImageView
+                        android:id="@+id/image_lamp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/lamp_off" />
+
+                    <TextView
+                        android:id="@+id/button_lamp_open"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="11dp"
+                        android:text="@string/lamp_open"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toEndOf="@+id/image_lamp"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/butt_fan_open"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/fan_open"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toStartOf="@+id/image_fan"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/button_lamp_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/lamp_close"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/image_lamp" />
+
+                    <TextView
+                        android:id="@+id/button_fan_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/fan_close"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/image_fan" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="氛围灯控制"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+
+            <SeekBar
+                android:id="@+id/seekBar_R"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:max="250"
+                />
+
+            <SeekBar
+                android:id="@+id/seekBar_G"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:max="250"
+                />
+
+            <SeekBar
+                android:id="@+id/seekBar_B"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:max="250"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">smarthome</string>
+
+    <string name="welcome">欢迎使用智能家居App</string>
+    <string name="version">版本号1.0</string>
+    <string name="Smart_Life_Subsystem">智慧生活子系统</string>
+    <string name="jump">跳过</string>
+    <string name="temp_xml">温度:</string>
+    <string name="hump_xml">湿度:</string>
+    <string name="light_xml">光照:</string>
+    <string name="co2_xml">二氧化碳:</string>
+    <string name="methane_xml">噪音:</string>
+    <string name="Emg_xml">设备监控</string>
+    <string name="Ecl_xml">设备控制</string>
+    <string name="data_xml">00.00</string>
+    <string name="fan_open">风扇开</string>
+    <string name="fan_close">风扇关</string>
+    <string name="lamp_open">照明灯开</string>
+    <string name="lamp_close">照明灯关</string>
+    <string name="null_xml"> </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

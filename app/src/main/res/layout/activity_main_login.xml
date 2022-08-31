@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="132dp"
+        android:text="智能家居账号登录"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text="云平台账号："
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="18336062511"
+                android:maxLength="20"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="云平台账号密码："
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="123456"
+                android:maxLength="20"
+                android:inputType="numberPassword"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/butt_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="云平台网关标识设置"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/butt_log_in"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="|登陆|"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/butt_Forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="？忘记账号密码"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

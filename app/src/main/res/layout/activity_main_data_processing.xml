@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_data_processing">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="云平台网关id："
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText_Central_gateway"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+                android:text="441327"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="温度:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_temp"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="temp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="17dp"
+                android:text="湿度:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_hump"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="hum"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="噪音:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_noise"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="noise"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="光照:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_light"
+                android:layout_width="55dp"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="light"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="CO2:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_CO2"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="CO2"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="17dp"
+                android:text="风速:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_wind"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="wind"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="人体:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_human"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="human"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="火焰:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_flame"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="flame"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="照明灯:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_flashlight"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="flashlight"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="18dp"
+                android:text="风扇:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_fan"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="fan"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="烟雾:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_smoke"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="somke"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="警示灯:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_Warning_Light"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Warning_Light"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="窗帘:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_curtains_open"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="curtains_open"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="RGB灯带:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_Rgb"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="str_rgb"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="监控:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_monitor"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="192.168.1.103"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="NBIOT设备ID:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText_NBID_Methane"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="30654"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="17dp"
+                android:gravity="center"
+                android:text="甲烷:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_Methane"
+                android:layout_width="110dp"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="FlammableGas"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="NBIOT设备ID:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText_NBID_carbon_monoxide"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="30653"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="一氧化碳:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_carbon_monoxide"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="CarbonMonoxideStr"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/butt_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="43dp"
+        android:layout_weight="1"
+        android:text="返回"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <TextView
+        android:id="@+id/butt_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="102dp"
+        android:text="确定"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

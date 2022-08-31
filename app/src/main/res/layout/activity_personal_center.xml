@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@mipmap/personal_center_1" />
+
+        <TextView
+            android:id="@+id/account_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/personal_center_2"
+            android:gravity="center"
+            android:text="175****4963"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@mipmap/personal_center_2" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+            android:id="@+id/but_Smart_Guardian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:background="@drawable/values"
+            android:text="智能守护" />
+
+        <TextView
+            android:id="@+id/but_setup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:background="@drawable/values"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/but_personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:background="@drawable/values"
+            android:text="帮助中心" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/but_Wisdom_life3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="智慧生活" />
+
+            <Button
+                android:id="@+id/but_Smart_Security3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="智慧安防" />
+
+            <Button
+                android:id="@+id/but_personal_center3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="个人中心" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

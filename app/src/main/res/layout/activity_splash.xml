@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <TextView
+        android:id="@+id/count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:text="5s" />
+    <TextView
+        android:id="@+id/welcome_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/welcome"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/version_tv"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_tv"
+        android:layout_alignEnd="@id/welcome_tv"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="-29dp"
+        android:text="@string/version"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/jump_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="oncLick_jump"
+        android:text="@string/jump" />
+
+</RelativeLayout>

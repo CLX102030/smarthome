@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".personal_center.Activity_Smart_Guardian">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="359dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/but_break_tv3"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:background="@mipmap/break_1"
+                android:gravity="center" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="智能守护"
+                android:textSize="30sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/mSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/values"
+                android:text="自动控制                                 打开"
+                android:textSize="25sp"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/middleware_logoRevise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/values"
+            android:text="云平台标识修改"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/history_record_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/values"
+            android:text="历史记录查询"
+            android:textSize="25sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

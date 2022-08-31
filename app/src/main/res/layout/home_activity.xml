@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/Smart_Life_Subsystem"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/Emg_xml"
+                        android:textSize="25sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/temp_xml"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/text_temp_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="00.00C°"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/hump_xml"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/text_hump_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="00.00%RH"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/light_xml"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/text_light_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="00.00lx"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/co2_xml"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/text_co2_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="00.00ppm"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/methane_xml"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/text_noise_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="00.00db"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/Ecl_xml"
+                        android:textSize="25sp" />
+
+                    <!--        <LinearLayout-->
+                    <!--            android:layout_width="match_parent"-->
+                    <!--            android:layout_height="wrap_content"-->
+                    <!--            android:orientation="horizontal">-->
+
+                    <!--            <TextView-->
+                    <!--                android:id="@+id/button_living_room"-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_weight="1"-->
+                    <!--                android:text="客厅"-->
+                    <!--                android:textSize="20sp" />-->
+
+                    <!--            <TextView-->
+                    <!--                android:id="@+id/button_bedroom"-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_weight="1"-->
+                    <!--                android:text="卧室"-->
+                    <!--                android:textSize="20sp" />-->
+
+                    <!--            <TextView-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_weight="1"-->
+                    <!--                android:text="客房"-->
+                    <!--                android:textSize="20sp" />-->
+
+                    <!--            <TextView-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_weight="1"-->
+                    <!--                android:text="书房"-->
+                    <!--                android:textSize="20sp" />-->
+
+                    <!--            <TextView-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_weight="1"-->
+                    <!--                android:text="厨房"-->
+                    <!--                android:textSize="20sp" />-->
+
+                    <!--            <TextView-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_weight="1"-->
+                    <!--                android:text="卫生间"-->
+                    <!--                android:textSize="20sp" />-->
+
+                    <!--        </LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tab_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:tabGravity="center" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/frame_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp">
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/view_pager"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+
+                    </FrameLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:orientation="horizontal"></LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/but_Wisdom_life1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="智慧生活" />
+
+                <Button
+                    android:id="@+id/but_Smart_Security1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="智慧安防" />
+
+                <Button
+                    android:id="@+id/but_personal_center1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="个人中心" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
